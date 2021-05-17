@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	
+
+	<head>
+		<title>COVID19 in India</title>
+		<style>
+			.container{
+				display: grid;
+				grid-template-columns: 1fr auto 1fr; 
+				grid-template-rows: auto;
+
+			}
+			.item{}
+			
+			h3{
+				font-family: Arial, sans-serif;
+				text-align: center;
+			}
+			
+			body{
+				margin:auto;
+			}
+			svg{
+				
+   				background-color : #F0F0F0;
+			}
+
+			.legend{
+				font-family: Arial, sans-serif;
+				font-size: x-small;
+				border: none;
+  				padding: none;
+  				margin: none;
+
+			}
+
+			p{
+				font-family: Arial, sans-serif;
+				font-size: small;
+			}
+
+			rect {
+				
+				fill-opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body>
+		<h3 >COVID19 Trends in India</h3>
+		<div class = "container"> 
+			<div class = "item" ></div>
+
+			<div class = "item" ><svg></svg></div>
+			<div class = "item" ></div>
+			<div class = "item" ></div>
+
+			<div class = "item" ><p> The above trends are based on the data available <a href="https://api.covid19india.org/">here</a>.  </p></div>
+
+			<div class = "item" ></div>
+		</div>
+		
+		<script src="https://d3js.org/d3.v6.min.js"></script>
+		<script src="index.js"></script>
+
+	</body>
+
+</html>
