@@ -382,7 +382,7 @@ data.then((json)=> {
     	.attr('x', margin.left/2 + 20)
     	.attr('y', margin.top+70+height)
     	.attr('class','legend')
-    	.text('Poitivity Rate');
+    	.text('Positivity Rate');
 
 
     b=(margin.top) + 80+ height
