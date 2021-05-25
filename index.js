@@ -322,12 +322,15 @@ data.then((json)=> {
     	.attr("stroke-width", 8)
     	.attr('d',d3.line()([[a,b], [c, d]]));
 
+    l = walk.length;
+    n = walk[l-1].tested;
+
     svg
     	.append('text')
     	.attr('x', margin.left/2 + 20)
     	.attr('y', margin.top+10+height)
     	.attr('class','legend')
-    	.text('Tested till date');
+    	.text('Tested till date : ' + n.toLocaleString());
 
     b=(margin.top) + 20+ height
     d=(margin.top) + 25 + height
@@ -340,12 +343,13 @@ data.then((json)=> {
     	.attr("stroke-width", 8)
     	.attr('d',d3.line()([[a,b], [c, d]]));
 
+    n = walk[l-1].confirmed;
     svg
     	.append('text')
     	.attr('x', margin.left/2 + 20)
     	.attr('y', margin.top+25+height)
     	.attr('class','legend')
-    	.text('Confirmed cases');
+    	.text('Confirmed cases till date : ' + n.toLocaleString());
 
     b=(margin.top) + 35+ height
     d=(margin.top) + 40 + height
@@ -358,12 +362,13 @@ data.then((json)=> {
     	.attr("stroke-width", 8)
     	.attr('d',d3.line()([[a,b], [c, d]]));
 
+    n = walk[l-1].dec;
     svg
     	.append('text')
     	.attr('x', margin.left/2 + 20)
     	.attr('y', margin.top+40+height)
     	.attr('class','legend')
-    	.text('Deaths');
+    	.text('Deaths till date: ' + n.toLocaleString());
 
     b=(margin.top) + 65+ height
     d=(margin.top) + 65 + height
