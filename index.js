@@ -7,7 +7,7 @@ Date.prototype.addDays = function(days) {
 }
 
 //get data
-url = "https://api.covid19india.org/v4/min/timeseries.min.json"
+url = "https://data.covid19india.org/v4/min/timeseries.min.json"
 var data = d3.json(url)
 
 data.then((json)=> {
