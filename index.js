@@ -10,9 +10,11 @@ Date.prototype.addDays = function(days) {
 url = "https://data.covid19india.org/v4/min/timeseries.min.json"
 var data = d3.json(url)
 
-data.then((json)=> {
+console.log("a")
 
-	
+data.then((json)=> {
+	console.log("a")
+
 	var s1 = '2020-04-01';
 	var d1 = new Date(s1);
 
